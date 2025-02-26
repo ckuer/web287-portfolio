@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-family: "Michroma", sans-serif;
+    margin: 0px;
+    margin-bottom: .5em;
+}
+
+p {
+    margin: .5em 0;
+}
+
+img {
+    width: 100%;
+}
+
+#container {
+    background-color: #fff;
+    margin: 15vh auto;
+    max-width: 900px;
+}
+
+#logo {
+    max-width: 200px;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+header nav a {
+    width: 100%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin: 0 .5em;
+    background-color: #dff8fc;
+    text-decoration: none;
+    text-align: center;
+    color: #262626;
+}
+
+header nav a:first-of-type {
+    margin-left: 0px;
+}
+
+header nav a:last-of-type{
+    margin-right: 0px;
+}
+
+header nav a:hover {
+    background-color: #262626;
+    color: #f7f7f7;
+}
+
+main {
+    background-color: #dff8fc;
+    padding: 1em;
+}
+
+div .gallery {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
