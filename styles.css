@@ -19,6 +19,12 @@ img {
     width: 100%;
 }
 
+#banner {
+    height: 190px;
+    background-image: url("images/css-code.png");
+    background-position: bottom right;
+}
+
 #container {
     background-color: #fff;
     margin: 15vh auto;
@@ -62,7 +68,16 @@ header nav a:hover {
 
 main {
     background-color: #dff8fc;
-    padding: 1em;
+    padding: 3em;
+}
+
+main a {
+    color: black;
+    text-decoration: underline;
+}
+
+main a:hover {
+    text-decoration: none;
 }
 
 div .gallery {
@@ -71,4 +86,41 @@ div .gallery {
     grid-template-columns: auto auto;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
+}
+
+.btn {
+    padding: 1em;
+    margin: 1em auto;
+    display: inline-block;
+    background-color: #262626;
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #000000;
+    color: white;
+}
+
+/* screens under 550px wide */
+@media (max-width: 550px) {
+    header, header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        max-width: 175px;
+        padding: 1em;
+        margin: 0.75em 0;
+    }
+
+    header nav a:first-of-type {
+        display: none;
+    }
+
+    div .gallery {
+        grid-template-columns: auto;
+    }
 }
